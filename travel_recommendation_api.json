@@ -47,6 +47,22 @@
             "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
           }
         ]
+      },
+      {
+        "id": 4,
+        "name": "India",
+        "cities": [
+          {
+            "name": "Patna",
+            "imageUrl": "patna.jpg",
+            "description": "A lively city known for litti chokha."
+          },
+          {
+            "name": "Kolkata",
+            "imageUrl": "kolkata.jpg",
+            "description": "The place known for its diverse culture and foods."
+          }
+        ]
       }
     ],
     "temples": [

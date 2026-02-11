@@ -1,5 +1,19 @@
 /* Basic CSS for the navigation bar */
 
+.hero-section {
+    padding: 100px 60px 40px 100px;
+    color: #0e0330;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.results-section {
+    padding: 40px 80px 80px 120px;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -93,7 +107,7 @@ nav a:hover {
 /* Basic CSS for the form elements */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('./images/7-wonders.jpg');
+    background-image: url('./images/travel_logo.jpg');
     background-repeat: no-repeat;
     background-clip: border-box;
     background-attachment: fixed;
@@ -155,47 +169,98 @@ h3 {
     word-wrap: break-word;
 }
 
-#result {  
+#result {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+
+.result-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
     flex-direction: column;
 }
 
-#result img {
+.result-card img {
     width: 100%;
-}  
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+ 
+
+#result div {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.result-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.result-card h3 {
+    margin-bottom: 8px;
+}
+
+.result-card p {
+    flex-grow: 1;
+}
+
+
+#resultsTitle {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #cc6600;
+}
+
 
 .container {
-    height: calc(100vh - 74px);    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 40px;
 }
 
 .container-left {
-    width: 40%;
-    height: calc(100vh - 70px);
-    margin: 0 50px 0 0;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-     /* Orange with 30% opacity */
+    width: 100%;
 }
 
+
 .container-right {
-    width: 40%;
-    height: calc(100vh - 74px);
-    margin: 0 50px 0 0;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-   /* Orange with 30% opacity */
-    overflow: auto;
+    width: 100%;
+    padding: 20px 50px;
 }
+
+
 
 .title {
     font-size: 1.75em;
