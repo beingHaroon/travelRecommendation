@@ -21,14 +21,21 @@
 }
 
 nav {
-    background-color: #003366; /* Dark Blue */
-    color: #ffffff; /* White */
+    background-color: #003366;
+    color: #ffffff;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 74px;
+
+    position: fixed;      /* 🔥 makes it stay on top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
 
 nav h1 {
     font-size: 2em;
