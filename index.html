@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel With Best Friend's</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <span><img class="icon" src="./images/flight.png"></span>
+            <span><h1>Friend's Travel</h1></span>
+        </div>
+        <ul>
+            <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+            <li><a href="./about.html" id="about">About Us</a></li>
+            <li><a href="./contact.html" id="contact">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><input type="text" id="searchInput" placeholder="Enter a destination or keyword"></li>
+            <li><button id='btnSearch'>Search</button></li>
+            <li><button id='btnReset'>Clear</button></li>
+        </ul>
+    </nav>    
+    <div class="nav-left">
+        <ul>
+            <li><a href="https://twitter.com"><img class="icon-small" src="./images/tweeter.png"></a></li>
+            <li><a href="https://facebook.com"><img class="icon-small" src="./images/Facebook.png"></a></li>
+            <li><a href="https://instagram.com"><img class="icon-small" src="./images/insta.jpg"></a></li>
+            <li><a href="https://pinterest.com"><img class="icon-small" src="./images/youtube-logo.png"></a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="container-left">
+            <div class="title">
+                <h2>Welcome to Friend's Travel</h2>
+            </div>
+            <div class="text">
+                <p>Explore the world with our expert recommendations and personalized travel experiences. Whether you're seeking a relaxing beach getaway, an adventurous trek, or a cultural journey, we've got you covered. Start planning your dream vacation today!</p>
+                <br>
+                <button href="#" id="btnBookNow" class="book-now-button">Book Now</button>
+            </div>
+            
+        </div>
+        <div class="container-right">
+            <div class="searchGroup text" id="result"></div>
+        </div>         
+    </div>
+    
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>
