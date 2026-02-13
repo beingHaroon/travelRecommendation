@@ -2,49 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Travel With Best Friend's</title>
-    <link rel="stylesheet" href="./travel_recommendation.css">
+    <title>About Us - Travel App</title>
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-    <nav>
-        <div>
-            <span><img class="icon" src="./images/flight.png"></span>
-            <span><h1>Friend's Travel</h1></span>
-        </div>
-        <ul>
-            <li><a href="./travel_recommendation.html" id="home">Home</a></li>
-            <li><a href="./about.html" id="about">About Us</a></li>
-            <li><a href="./contact.html" id="contact">Contact Us</a></li>
-        </ul>
-    </nav>    
 
-    <div class="container">
-        <div class="container-left">
-            <div class="title">
-                <h2>About Us</h2>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-logo">
+            <img class="icon" src="./images/flight.png" alt="logo">
+            <h1>TravelBloom</h1>
+        </div>
+
+        <div class="nav-links">
+            <a href="./travel_recommendation.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+
+        <h1 class="about-title">ABOUT US</h1>
+
+        <div class="about-content">
+            <p>
+                Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. 
+                Our mission is to provide the best experience for people traveling to different destinations around the world.
+            </p>
+            <p>
+                Our values include integrity, innovation, customer satisfaction, and teamwork. 
+                We believe in putting our customers first and working together to achieve our goals.
+            </p>
+            <p>
+                Feel free to explore our website to learn more about what we offer!
+            </p>
+        </div>
+
+        <!-- Team Section -->
+        <div class="team-section">
+            <div class="team-left">
+                <h2>Our<br>Team</h2>
             </div>
-            <div class="text">
-                <p>Welcome to Friend's Travel, where every journey is an unforgettable experience. We are a passionate team dedicated to providing exceptional travel services and creating memories that last a lifetime.</p>
-                <p>Our mission is to inspire and assist you in discovering the world's wonders. From breathtaking landscapes to vibrant cultures, we curate personalized travel experiences tailored to your desires.</p>
+
+            <div class="team-members">
+
+                <div class="team-card">
+                    <i class="fas fa-user-circle"></i>
+                    <h3>John Doe</h3>
+                    <p>John is responsible for overall company strategy and vision.</p>
+                    <button>CEO</button>
+                </div>
+
+                <div class="team-card">
+                    <i class="fas fa-user-circle"></i>
+                    <h3>Celina Thomas</h3>
+                    <p>Celina leads the technical and operations team.</p>
+                    <button>Team Lead</button>
+                </div>
+
+                <div class="team-card">
+                    <i class="fas fa-user-circle"></i>
+                    <h3>Mike Tyson</h3>
+                    <p>Mike manages project delivery and client relationships.</p>
+                    <button>Delivery Head</button>
+                </div>
+
             </div>
         </div>
-        <div class="container-right">
-            <div class="title">
-                <h2>Our Team</h2>
-            </div>
-            <div class="team-member">
-                <h3>John Doe</h3>
-                <p>Founder & CEO</p>
-            </div>
-            <div class="team-member">
-                <h3>Jane Smith</h3>
-                <p>Travel Specialist</p>
-            </div>
-            <!-- Add more team members as needed -->
-        </div>         
-    </div>
-    
-    <!-- Add any additional scripts or links to JS files if needed -->
-    <script src="./travel_recommendation.js"></script>
+
+    </section>
+
 </body>
 </html>
